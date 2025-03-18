@@ -63,6 +63,7 @@ body header {
 }
 
 body header img {
+    scale: 90%;
     width: 50%;
     height: auto;
     border-radius: 100%;
