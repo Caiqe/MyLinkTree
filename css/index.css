@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
+
+:root {
+    --offwhite: #FAF9F6;
+    --offwhite-dark: #EEEDEB;
+    --text-color: #333;
+}
+
+/* Certifique-se de que a classe está correta */
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Escolha entre 300, 400, 700 */
+    font-style: normal;
+}
+@keyframes animateBorderRadius {
+    0% {
+        border-radius:  34% 49% 37% 59%;
+    }
+    25% {
+        border-radius: 59% 37% 49% 34%;
+    }
+    50% {
+        border-radius:  49% 34% 59% 37%;
+    }
+    75% {
+        border-radius: 34% 49% 37% 59%;
+    }
+    100% {
+        border-radius: 59% 37% 49% 34%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    /* Removendo sans-serif para evitar sobrescrita */
+}
+
+body {
+    background: linear-gradient(180deg, black, gray);
+    min-height: 100vh;
+    font-family: "Fira Code", monospace; /* Agora a fonte será aplicada corretamente */
+    color: var(--offwhite);
+   
+}
+#logo{
+    width: 30%;
+}
+
+body header {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+body header img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+    animation: animateBorderRadius 10s infinite alternate;
+}
+body section{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    display: flex;flex-direction: column;
+    justify-content: center;
+  
+    height: 3rem;
+    background-color: var(--offwhite-dark);
+}
+body section a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 90%;
+    height: 3rem; /* Define uma altura */
+    background-color: var(--offwhite-dark);
+    border: 2px solid var(--offwhite); /* Define a espessura e o tipo da borda */
+    border-radius: 12px; /* Bordas arredondadas */
+    color: black; /* Cor do texto para contrastar */
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    margin-bottom: 1rem; /* Espaçamento entre os links */
+    box-shadow: 5px 5px 5px gray;
+}
+body section a:hover {
+    background-color: var(--offwhite);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: medium;
+    padding: 5px;
+}
+#git{
+    padding-left: 20px;
+}
