@@ -52,7 +52,7 @@ body {
     width: 30%;
 }
 
-body header {
+header {
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -62,14 +62,19 @@ body header {
     gap: 2rem;
 }
 
-body header img {
+header img {
     scale: 90%;
     width: 50%;
     height: auto;
     border-radius: 100%;
     animation: animateBorderRadius 10s infinite alternate;
 }
-body section{
+.container {
+    max-width: 430px; /* Largura aproximada de um celular */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 1rem;
+}
+section{
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -83,7 +88,7 @@ body section{
     height: 3rem;
     background-color: var(--offwhite-dark);
 }
-body section a {
+section a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +106,7 @@ body section a {
     margin-bottom: 1rem; /* Espaçamento entre os links */
     box-shadow: 5px 5px 5px gray;
 }
-body section a:hover {
+section a:hover {
     background-color: var(--offwhite);
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
